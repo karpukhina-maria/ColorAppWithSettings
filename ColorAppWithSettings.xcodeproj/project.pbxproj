@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A583C93226E3F24300FBC41E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583C93126E3F24300FBC41E /* AppDelegate.swift */; };
 		A583C93426E3F24300FBC41E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583C93326E3F24300FBC41E /* SceneDelegate.swift */; };
-		A583C93626E3F24300FBC41E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583C93526E3F24300FBC41E /* ViewController.swift */; };
+		A583C93626E3F24300FBC41E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583C93526E3F24300FBC41E /* MainViewController.swift */; };
 		A583C93926E3F24300FBC41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A583C93726E3F24300FBC41E /* Main.storyboard */; };
 		A583C93B26E3F24600FBC41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A583C93A26E3F24600FBC41E /* Assets.xcassets */; };
 		A583C93E26E3F24600FBC41E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A583C93C26E3F24600FBC41E /* LaunchScreen.storyboard */; };
+		A583C94A26E4071400FBC41E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583C94926E4071400FBC41E /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A583C92E26E3F24300FBC41E /* ColorAppWithSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorAppWithSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A583C93126E3F24300FBC41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A583C93326E3F24300FBC41E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A583C93526E3F24300FBC41E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A583C93526E3F24300FBC41E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A583C93826E3F24300FBC41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A583C93A26E3F24600FBC41E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A583C93D26E3F24600FBC41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A583C93F26E3F24600FBC41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A583C94926E4071400FBC41E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		A583C93026E3F24300FBC41E /* ColorAppWithSettings */ = {
 			isa = PBXGroup;
 			children = (
-				A583C93126E3F24300FBC41E /* AppDelegate.swift */,
-				A583C93326E3F24300FBC41E /* SceneDelegate.swift */,
-				A583C93526E3F24300FBC41E /* ViewController.swift */,
-				A583C93726E3F24300FBC41E /* Main.storyboard */,
-				A583C93A26E3F24600FBC41E /* Assets.xcassets */,
-				A583C93C26E3F24600FBC41E /* LaunchScreen.storyboard */,
-				A583C93F26E3F24600FBC41E /* Info.plist */,
+				A583C94626E3F4EB00FBC41E /* Sroryboards */,
+				A583C94526E3F4B300FBC41E /* ViewControllers */,
+				A583C94826E3F52000FBC41E /* App */,
+				A583C94726E3F51400FBC41E /* Resourses */,
 			);
 			path = ColorAppWithSettings;
+			sourceTree = "<group>";
+		};
+		A583C94526E3F4B300FBC41E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A583C93526E3F24300FBC41E /* MainViewController.swift */,
+				A583C94926E4071400FBC41E /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A583C94626E3F4EB00FBC41E /* Sroryboards */ = {
+			isa = PBXGroup;
+			children = (
+				A583C93726E3F24300FBC41E /* Main.storyboard */,
+				A583C93C26E3F24600FBC41E /* LaunchScreen.storyboard */,
+			);
+			path = Sroryboards;
+			sourceTree = "<group>";
+		};
+		A583C94726E3F51400FBC41E /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				A583C93A26E3F24600FBC41E /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A583C94826E3F52000FBC41E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A583C93126E3F24300FBC41E /* AppDelegate.swift */,
+				A583C93326E3F24300FBC41E /* SceneDelegate.swift */,
+				A583C93F26E3F24600FBC41E /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A583C93626E3F24300FBC41E /* ViewController.swift in Sources */,
+				A583C93626E3F24300FBC41E /* MainViewController.swift in Sources */,
 				A583C93226E3F24300FBC41E /* AppDelegate.swift in Sources */,
 				A583C93426E3F24300FBC41E /* SceneDelegate.swift in Sources */,
+				A583C94A26E4071400FBC41E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K242QA4C2Z;
-				INFOPLIST_FILE = ColorAppWithSettings/Info.plist;
+				INFOPLIST_FILE = ColorAppWithSettings/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Maria.Karpukhina.ColorAppWithSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K242QA4C2Z;
-				INFOPLIST_FILE = ColorAppWithSettings/Info.plist;
+				INFOPLIST_FILE = ColorAppWithSettings/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Maria.Karpukhina.ColorAppWithSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
